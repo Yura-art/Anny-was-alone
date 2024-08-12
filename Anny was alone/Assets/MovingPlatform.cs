@@ -8,8 +8,8 @@ public class MovingPlatform : MonoBehaviour
     public float moveSpeed = 2f;
 
     // Posiciones límite entre las cuales la plataforma se moverá
-    public Vector2 topPosition = new Vector2(-4.12f, 1.05f);
-    public Vector2 bottomPosition = new Vector2(-4f, -10.5f);
+    public Vector2 topPosition = new Vector2(-1.6f, -15.4f);
+    public Vector2 bottomPosition = new Vector2(-1.6f, -2.8f);
 
     // Dirección de movimiento (1 = subiendo, -1 = bajando)
     private int direction = -1;
