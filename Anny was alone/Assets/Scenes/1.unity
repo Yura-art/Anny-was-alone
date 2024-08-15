@@ -762,7 +762,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 215217269}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: c91bdc71e3193644f9ac1b0111271e9b, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 7460b5ac8f7081f46ba671bc82229dcc, type: 3}
+>>>>>>> f33c680773a3a9fa43d908c6cd528959942b4007
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &244444754
@@ -933,7 +937,7 @@ Transform:
   m_GameObject: {fileID: 271662700}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.06, y: 3.67, z: -10.01}
+  m_LocalPosition: {x: -19.52, y: 3.99, z: -10.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1353,7 +1357,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 526599234}
+<<<<<<< HEAD
   m_Layer: 3
+=======
+  m_Layer: 7
+>>>>>>> f33c680773a3a9fa43d908c6cd528959942b4007
   m_Name: Controlador suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1368,9 +1376,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 526599233}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: -0.06532975, y: -0, z: -0, w: 0.9978637}
   m_LocalPosition: {x: 0, y: -0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.07, y: -0.48, z: -0}
+  m_LocalScale: {x: 1.3625, y: 1, z: 1}
+>>>>>>> f33c680773a3a9fa43d908c6cd528959942b4007
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2017298740}
@@ -3188,7 +3202,11 @@ Transform:
   m_GameObject: {fileID: 1555700512}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -7.8885975, y: 2.788979, z: -10.01}
+=======
+  m_LocalPosition: {x: -6.7417603, y: 2.7889795, z: -10.01}
+>>>>>>> f33c680773a3a9fa43d908c6cd528959942b4007
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17794,7 +17812,11 @@ GameObject:
   - component: {fileID: 2017298738}
   - component: {fileID: 2017298737}
   - component: {fileID: 2017298741}
+<<<<<<< HEAD
   m_Layer: 3
+=======
+  m_Layer: 7
+>>>>>>> f33c680773a3a9fa43d908c6cd528959942b4007
   m_Name: Yura
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -17934,7 +17956,7 @@ Transform:
   m_GameObject: {fileID: 2017298736}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0046962253, y: -0, z: -0, w: 0.99998903}
-  m_LocalPosition: {x: -20.06, y: 3.67, z: -0.01}
+  m_LocalPosition: {x: -19.52, y: 3.99, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17950,6 +17972,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2017298736}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: d662e7d1b417c9e4ab4153088e4ab22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -17961,12 +17984,29 @@ MonoBehaviour:
   capaDeteccionJugador:
     serializedVersion: 2
     m_Bits: 8
+=======
+  m_Script: {fileID: 11500000, guid: 0995b3e15bc1f784b9a74c6262bd1f7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idJugador: 0
+  fuerzaSalto: 12
+  velocidad: 5
+  centroDeteccion: {fileID: 526599234}
+  tamanoDeteccion: {x: 1, y: 0.25}
+  capaDeteccionJugador:
+    serializedVersion: 2
+    m_Bits: 128
+>>>>>>> f33c680773a3a9fa43d908c6cd528959942b4007
   capaDeteccionPiso:
     serializedVersion: 2
     m_Bits: 64
   tocaPiso: 0
   tocaJugador: 0
+<<<<<<< HEAD
   activar: 0
+=======
+  activar: 1
+>>>>>>> f33c680773a3a9fa43d908c6cd528959942b4007
 --- !u!1 &2020822237
 GameObject:
   m_ObjectHideFlags: 0
