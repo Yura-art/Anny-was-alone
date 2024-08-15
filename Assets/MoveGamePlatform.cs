@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movimiento : MonoBehaviour
+public class MovimientoPl : MonoBehaviour
 {
     public GameObject[] waypoints;
     public float speed = 2;

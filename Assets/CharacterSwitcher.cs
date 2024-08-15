@@ -4,51 +4,47 @@ using UnityEngine;
 
 public class CharacterSwitcher : MonoBehaviour
 {
-    public GameObject characterA; // El primer personaje
-    public GameObject characterB; // El segundo personaje
-    public Cinemachine.CinemachineVirtualCamera vcamA; // Virtual Camera para characterA
-    public Cinemachine.CinemachineVirtualCamera vcamB; // Virtual Camera para characterB
+    public List<GameObject> listaDePersonajes = new List<GameObject>();
 
-    private bool isControllingA = true; // Empieza controlando al personaje A
+    public int jugadorActivo;
 
+    // Start is called before the first frame update
     void Start()
     {
-        // Inicialmente, la cámara sigue a characterA
-        vcamA.Priority = 10;
-        vcamB.Priority = 5;
+        ActivarPersonaje();
     }
 
+    // Update is called once per frame
     void Update()
     {
-        // Cambiar de personaje al presionar la tecla F
         if (Input.GetKeyDown(KeyCode.F))
         {
-            SwitchCharacter();
+            SiguientePersonaje();
+            ActivarPersonaje();
         }
     }
 
-    void SwitchCharacter()
+    void SiguientePersonaje()
     {
-        // Cambiar el estado de control
-        isControllingA = !isControllingA;
-
-        if (isControllingA)
+        jugadorActivo++;
+        if (jugadorActivo > listaDePersonajes.Count - 1)
         {
-            // Controla characterA y ajusta la cámara
-            characterA.GetComponent<moviemitno>().enabled = true;
-            characterB.GetComponent<moviemitno>().enabled = false;
-
-            vcamA.Priority = 10;
-            vcamB.Priority = 5;
+            jugadorActivo = 0;
         }
-        else
-        {
-            // Controla characterB y ajusta la cámara
-            characterA.GetComponent<moviemitno>().enabled = false;
-            characterB.GetComponent<moviemitno>().enabled = true;
+    }
 
-            vcamA.Priority = 5;
-            vcamB.Priority = 10;
+    void ActivarPersonaje()
+    {
+        for (int i = 0; i < listaDePersonajes.Count; i++)
+        {
+            if (i == jugadorActivo)
+            {
+                listaDePersonajes[i].gameObject.GetComponent<Movimiento>().ActivarSalto(true);
+            }
+            else
+            {
+                listaDePersonajes[i].gameObject.GetComponent<Movimiento>().ActivarSalto(false);
+            }
         }
     }
 }

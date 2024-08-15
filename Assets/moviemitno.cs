@@ -1,69 +1,86 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class moviemitno : MonoBehaviour
+public class Movimiento : MonoBehaviour
 {
-    private Rigidbody2D rb2D;
+    float horizontal;
+    Rigidbody2D rigido;
+    private BoxCollider2D cajaColision;
 
-    [Header("Movimeinto")]
-    private float movimientoHorizontal = 0f;
-    [SerializeField] private float velocidadMovimiento;
-    [SerializeField] private float suavizadoDeMovimiento;
-    private Vector3 velocidad = Vector3.zero;
+    public int idPlayer;
 
-    [Header("Salto")]
-    [SerializeField] private float fuerzaSalto;
-    [SerializeField] private LayerMask queEsSuelo;
-    [SerializeField] private Transform controladorSuelo;
-    [SerializeField] private Vector3 dimensionesCaja;
-    [SerializeField] private bool enSuelo;
-    private bool salto = false;
-    public string targetTag = "Hazard";
+    public float jumpForce;
+    public float moveSpeed;
 
+    public Transform detectionCenter;
+    public Vector2 scaleDetection;
+    public LayerMask capaDetectionPlayer;
+    public LayerMask capaDeteccionFlour;
 
+    public bool touchFlour;
+    public bool touchPlayer;
 
-    private void Start()
+    public bool On = false;
+
+    Vector2 spawn;
+
+    // Start is called before the first frame update
+    void Awake()
     {
-        rb2D = GetComponent<Rigidbody2D>();
+        rigido = GetComponent<Rigidbody2D>();
+        cajaColision = GetComponent<BoxCollider2D>();
+
+        spawn = transform.position;
     }
-    private void Update()
+
+    void EstaEnSuelo()
     {
-        movimientoHorizontal = Input.GetAxisRaw("Horizontal") * velocidadMovimiento;
-        if (Input.GetButtonDown("Jump"))
+        touchFlour = Physics2D.OverlapBox(detectionCenter.position, scaleDetection, 0, capaDeteccionFlour);
+        touchPlayer = Physics2D.OverlapBox(detectionCenter.position, scaleDetection, 0, capaDetectionPlayer);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (On)
         {
-            salto = true;
+            EstaEnSuelo();
+
+            horizontal = Input.GetAxis("Horizontal");
+
+            rigido.velocity = new Vector2(horizontal * moveSpeed, rigido.velocity.y);
+
+            if (Input.GetKeyDown(KeyCode.Space) && (touchFlour || touchPlayer))
+            {
+                rigido.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            }
         }
     }
-    private void FixedUpdate()
+
+    public void ActivarSalto(bool habilitar)
     {
-        enSuelo = Physics2D.OverlapBox(controladorSuelo.position, dimensionesCaja, 0f, queEsSuelo);
-        Mover(movimientoHorizontal * Time.fixedDeltaTime, salto);
-        salto = false;  
-    }
-    private void Mover(float mover, bool saltar)
-    {
-        Vector3 velocidadObjetivo = new Vector2 (mover,rb2D.velocity.y);
-        rb2D.velocity =  Vector3.SmoothDamp(rb2D.velocity, velocidadObjetivo, ref velocidad, suavizadoDeMovimiento);  
-        if (enSuelo && saltar)
+        On = habilitar;
+
+        if (habilitar)
         {
-            enSuelo=false;  
-            rb2D.AddForce(new Vector2 (0f, fuerzaSalto));
+            rigido.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+        else
+        {
+            rigido.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         }
     }
-    private void OnDrawGizmos()
+
+    private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireCube(controladorSuelo.position, dimensionesCaja);
+        Gizmos.DrawWireCube(detectionCenter.position, scaleDetection);
     }
-    void OnCollisionEnter2D(Collision2D collision)
+
+    public void Reaparecer()
     {
-        // Verifica si el objeto que colisionó tiene la etiqueta específica
-        if (collision.gameObject.CompareTag(targetTag))
-        {
-            // Reinicia el nivel actual
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+        transform.position = spawn;
+        rigido.velocity = new Vector2(0, 0);
     }
 }
+
