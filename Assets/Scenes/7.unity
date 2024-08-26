@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 19447343}
   - component: {fileID: 19447345}
   - component: {fileID: 19447344}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 46326519}
   - component: {fileID: 46326521}
   - component: {fileID: 46326520}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4074,7 +4074,7 @@ GameObject:
   m_Component:
   - component: {fileID: 81419283}
   - component: {fileID: 81419284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Decorations&Hazards_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4158,7 +4158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 91098907}
   - component: {fileID: 91098908}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Decorations&Hazards_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4243,7 +4243,7 @@ GameObject:
   - component: {fileID: 104877767}
   - component: {fileID: 104877769}
   - component: {fileID: 104877768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4403,7 +4403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 127717858}
   - component: {fileID: 127717859}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Decorations&Hazards_25 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4487,7 +4487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 145457256}
   - component: {fileID: 145457257}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Decorations&Hazards_25 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4561,6 +4561,55 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &183254008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 183254010}
+  - component: {fileID: 183254009}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &183254009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183254008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58a7c28f7e27214dac47fc922bee0df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characters:
+  - {fileID: 743962963}
+  - {fileID: 302857899}
+  - {fileID: 281958616}
+  arrow: {fileID: 186464966}
+--- !u!4 &183254010
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183254008}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.637241, y: 3.6391454, z: -0.033404022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &184351238
 GameObject:
   m_ObjectHideFlags: 0
@@ -4571,7 +4620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 184351239}
   - component: {fileID: 184351240}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Hanging Plants_2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4645,6 +4694,90 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &186464966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 186464968}
+  - component: {fileID: 186464967}
+  m_Layer: 0
+  m_Name: Triangle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &186464967
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186464966}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Color: {r: 0.8773585, g: 0.6568437, b: 0.5338644, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &186464968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186464966}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0031558569, y: 0.000013540961, z: -0.9999858, w: -0.0042906813}
+  m_LocalPosition: {x: -10.36, y: 3.43, z: -0.01}
+  m_LocalScale: {x: 0.32825, y: 0.26253107, z: 0.32825}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0.003, y: 0.362, z: -180.492}
 --- !u!1 &191924508
 GameObject:
   m_ObjectHideFlags: 0
@@ -4655,7 +4788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 191924509}
   - component: {fileID: 191924510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - BackgroundDecoration_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4740,7 +4873,7 @@ GameObject:
   - component: {fileID: 210317221}
   - component: {fileID: 210317223}
   - component: {fileID: 210317222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4891,7 +5024,7 @@ MonoBehaviour:
   listaDePersonajes:
   - {fileID: 743962963}
   - {fileID: 302857899}
-  - {fileID: 1249976179}
+  - {fileID: 281958616}
   jugadorActivo: 0
 --- !u!4 &217642405
 Transform:
@@ -4918,7 +5051,7 @@ GameObject:
   m_Component:
   - component: {fileID: 253885322}
   - component: {fileID: 253885323}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Hanging Plants_6 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5003,7 +5136,7 @@ GameObject:
   - component: {fileID: 277331338}
   - component: {fileID: 277331340}
   - component: {fileID: 277331339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5122,7 +5255,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &288561792
+--- !u!1 &281958616
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5130,28 +5263,183 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 288561793}
+  - component: {fileID: 281958621}
+  - component: {fileID: 281958620}
+  - component: {fileID: 281958619}
+  - component: {fileID: 281958618}
+  - component: {fileID: 281958617}
   m_Layer: 7
-  m_Name: GameObject
-  m_TagString: Untagged
+  m_Name: Siham
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &288561793
+--- !u!50 &281958617
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281958616}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 2
+  m_Material: {fileID: 6200000, guid: 88530a4997ab23f41abdd1fa21d1e7a2, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &281958618
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281958616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &281958619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281958616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac73fa6e4aecd574689885224b8c062f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idPlayer: 3
+  jumpForce: 18
+  moveSpeed: 5
+  detectionCenter: {fileID: 1834404948}
+  scaleDetection: {x: 0.73, y: 0.08}
+  capaDetectionPlayer:
+    serializedVersion: 2
+    m_Bits: 128
+  capaDeteccionFlour:
+    serializedVersion: 2
+    m_Bits: 64
+  touchFlour: 0
+  touchPlayer: 0
+  On: 0
+--- !u!212 &281958620
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281958616}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &281958621
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288561792}
+  m_GameObject: {fileID: 281958616}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -0.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.113, y: -24.267, z: 0}
+  m_LocalScale: {x: 0.90016997, y: 3, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1249976184}
+  m_Children:
+  - {fileID: 1834404948}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &302857899
 GameObject:
@@ -5261,7 +5549,7 @@ MonoBehaviour:
   jumpForce: 15
   moveSpeed: 5
   detectionCenter: {fileID: 1354092831}
-  scaleDetection: {x: 1, y: 0.25}
+  scaleDetection: {x: 0.69, y: 0.06}
   capaDetectionPlayer:
     serializedVersion: 2
     m_Bits: 128
@@ -5332,7 +5620,7 @@ Transform:
   m_GameObject: {fileID: 302857899}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.74886, y: -25.265404, z: 0}
+  m_LocalPosition: {x: 17.642, y: -24.883, z: 0}
   m_LocalScale: {x: 0.90017265, y: 2.1143205, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5350,7 +5638,7 @@ GameObject:
   - component: {fileID: 347465640}
   - component: {fileID: 347465642}
   - component: {fileID: 347465641}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5480,7 +5768,7 @@ GameObject:
   - component: {fileID: 406020200}
   - component: {fileID: 406020202}
   - component: {fileID: 406020201}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5610,7 +5898,7 @@ GameObject:
   - component: {fileID: 452780503}
   - component: {fileID: 452780505}
   - component: {fileID: 452780504}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5740,7 +6028,7 @@ GameObject:
   - component: {fileID: 515477911}
   - component: {fileID: 515477913}
   - component: {fileID: 515477912}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5954,7 +6242,7 @@ GameObject:
   - component: {fileID: 603154510}
   - component: {fileID: 603154512}
   - component: {fileID: 603154511}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6102,7 +6390,7 @@ Transform:
   m_GameObject: {fileID: 743962963}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.26, y: -25.74, z: 0}
+  m_LocalPosition: {x: 16.229, y: -25.282, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6197,7 +6485,7 @@ MonoBehaviour:
   jumpForce: 12
   moveSpeed: 5
   detectionCenter: {fileID: 1465154933}
-  scaleDetection: {x: 1, y: 0.25}
+  scaleDetection: {x: 0.73, y: 0.07}
   capaDetectionPlayer:
     serializedVersion: 2
     m_Bits: 128
@@ -6270,7 +6558,7 @@ GameObject:
   - component: {fileID: 750539646}
   - component: {fileID: 750539648}
   - component: {fileID: 750539647}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6399,7 +6687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 754745996}
   - component: {fileID: 754745997}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Hanging Plants_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6515,7 +6803,7 @@ GameObject:
   - component: {fileID: 926574926}
   - component: {fileID: 926574928}
   - component: {fileID: 926574927}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6644,7 +6932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1057072843}
   - component: {fileID: 1057072844}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6932,7 +7220,7 @@ Transform:
   m_GameObject: {fileID: 1103316310}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.257192, y: -25.6293, z: -10}
+  m_LocalPosition: {x: 13.050049, y: -25.28421, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6949,7 +7237,7 @@ GameObject:
   - component: {fileID: 1113635631}
   - component: {fileID: 1113635633}
   - component: {fileID: 1113635632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7078,7 +7366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1137748516}
   - component: {fileID: 1137748517}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Decorations&Hazards_23 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7286,7 +7574,7 @@ MonoBehaviour:
   personajes:
   - {fileID: 743962963}
   - {fileID: 302857899}
-  - {fileID: 1249976179}
+  - {fileID: 281958616}
 --- !u!114 &1191784735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7335,7 +7623,7 @@ Transform:
   m_GameObject: {fileID: 1191784732}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.26, y: -25.74, z: -10}
+  m_LocalPosition: {x: 16.229, y: -25.282, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7352,7 +7640,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1222692760}
   - component: {fileID: 1222692761}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Decorations&Hazards_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7426,192 +7714,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1249976179
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1249976184}
-  - component: {fileID: 1249976183}
-  - component: {fileID: 1249976182}
-  - component: {fileID: 1249976181}
-  - component: {fileID: 1249976180}
-  m_Layer: 7
-  m_Name: Siham
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!50 &1249976180
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249976179}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 2
-  m_Material: {fileID: 6200000, guid: 88530a4997ab23f41abdd1fa21d1e7a2, type: 2}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!61 &1249976181
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249976179}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &1249976182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249976179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac73fa6e4aecd574689885224b8c062f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idPlayer: 3
-  jumpForce: 18
-  moveSpeed: 5
-  detectionCenter: {fileID: 288561793}
-  scaleDetection: {x: 1, y: 0.25}
-  capaDetectionPlayer:
-    serializedVersion: 2
-    m_Bits: 128
-  capaDeteccionFlour:
-    serializedVersion: 2
-    m_Bits: 64
-  touchFlour: 0
-  touchPlayer: 0
-  On: 0
---- !u!212 &1249976183
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249976179}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1249976184
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249976179}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.33, y: -24.73, z: 0}
-  m_LocalScale: {x: 0.90017265, y: 3, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 288561793}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1270676877
 GameObject:
   m_ObjectHideFlags: 0
@@ -7622,7 +7724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1270676878}
   - component: {fileID: 1270676879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Hanging Plants_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7706,7 +7808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1272164021}
   - component: {fileID: 1272164022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Hanging Plants_6 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7790,7 +7892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1315746532}
   - component: {fileID: 1315746533}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Decorations&Hazards_25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8033,7 +8135,7 @@ Transform:
   m_GameObject: {fileID: 1354092830}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: -0.49, z: 0}
+  m_LocalPosition: {x: 0.022, y: -0.564, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8196,7 +8298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1394521870}
   - component: {fileID: 1394521871}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Decorations&Hazards_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8280,7 +8382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1399059285}
   - component: {fileID: 1399059286}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Decorations&Hazards_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8354,153 +8456,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1433787844
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1433787848}
-  - component: {fileID: 1433787847}
-  - component: {fileID: 1433787846}
-  - component: {fileID: 1433787845}
-  m_Layer: 6
-  m_Name: Mossy - FloatingPlatforms_4 (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1433787845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433787844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af75951b8b225eb47a1edb2fac44f1d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  speed: 3
---- !u!61 &1433787846
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433787844}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.73627955}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.82, y: 4.84}
-    newSize: {x: 10.82, y: 4.84}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 10.82, y: 3.3674412}
-  m_EdgeRadius: 0
---- !u!212 &1433787847
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433787844}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 3
-  m_Sprite: {fileID: 1422345460, guid: 70105341c27a3414d88d6b6387ee4b9f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 10.82, y: 4.84}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1433787848
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1433787844}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.83, y: -17.94, z: 0}
-  m_LocalScale: {x: 0.46844903, y: 0.46844903, z: 0.46844903}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1465154932
 GameObject:
   m_ObjectHideFlags: 0
@@ -8526,7 +8481,7 @@ Transform:
   m_GameObject: {fileID: 1465154932}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07, y: -0.45, z: 0}
+  m_LocalPosition: {x: -0.037, y: -0.651, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8754,7 +8709,7 @@ GameObject:
   - component: {fileID: 1560449133}
   - component: {fileID: 1560449135}
   - component: {fileID: 1560449134}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8883,7 +8838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1623801108}
   - component: {fileID: 1623801109}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Hanging Plants_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8967,7 +8922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1697159824}
   - component: {fileID: 1697159825}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Decorations&Hazards_22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9051,7 +9006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1722901255}
   - component: {fileID: 1722901256}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - BackgroundDecoration_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9135,7 +9090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1792554736}
   - component: {fileID: 1792554737}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Decorations&Hazards_23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9209,6 +9164,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1834404947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1834404948}
+  m_Layer: 7
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1834404948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834404947}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.064, y: -0.551, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 281958621}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2003616684
 GameObject:
   m_ObjectHideFlags: 0
@@ -9364,7 +9350,7 @@ GameObject:
   - component: {fileID: 2082931246}
   - component: {fileID: 2082931248}
   - component: {fileID: 2082931247}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9538,7 +9524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2132749345}
   - component: {fileID: 2132749346}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mossy - Hanging Plants_2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9622,8 +9608,6 @@ SceneRoots:
   - {fileID: 302857904}
   - {fileID: 743962964}
   - {fileID: 1191784736}
-  - {fileID: 1249976184}
-  - {fileID: 1433787848}
   - {fileID: 1533134356}
   - {fileID: 1325608435}
   - {fileID: 1103316315}
@@ -9634,3 +9618,6 @@ SceneRoots:
   - {fileID: 827420999}
   - {fileID: 217642405}
   - {fileID: 1082665693}
+  - {fileID: 281958621}
+  - {fileID: 186464968}
+  - {fileID: 183254010}
